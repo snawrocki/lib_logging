@@ -74,8 +74,10 @@ void debug_printf(char fmt[], ...);
 
 #if DEBUG_PRINT_ENABLE0
 #define debug_printf(...) debug_printf(__VA_ARGS__)
+#define dprintf(...) debug_printf(__VA_ARGS__)
 #else
 #define debug_printf(...)
+#define dprintf(...)
 #endif
 
 
